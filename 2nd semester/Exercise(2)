@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a;
+    int min;
+    
+    cin>>a;
+    
+    int b[a];
+    
+    for(int i=0; i <a; i++){
+        cin>>b[i];
+    }
+    min = b[0];
+    for(int i=0; i < a; i++){
+        if(b[i] < min)
+            min = b[i];
+    }
+    cout<< min;
+}
