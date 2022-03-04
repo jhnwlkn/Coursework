@@ -6,6 +6,8 @@ double circle(int x){
 }
 
 int main(){
-cin >> x;
+	int x;
+
+	cin >> x;
 	cout << circle(x);
 }
