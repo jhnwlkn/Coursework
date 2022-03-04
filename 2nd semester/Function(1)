@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+inline void  Swap ( int *x, int *y){ 
+    int temp ;
+    temp = *x ;
+    *x = *y;
+    *y = temp;
+}
+
+int main() {
+    
+    int x,y;
+    
+    cin >> x >> y;
+    
+    Swap(&x,&y);
+    
+    cout << x << " " << y;
+}
