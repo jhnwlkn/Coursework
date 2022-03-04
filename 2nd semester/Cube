@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+double cube(int a, int b){
+	return a*b;
+}
+
+double cube(int a, int b, int c){
+	return a*b*c;
+}
+
+int main(){
+	int a,b,c;
+	cin >> a >> b >> c;
+	
+	cout << cube(a,b) << endl;
+	cout << cube(a,b,c);
+}
