@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int  Swap ( int a, int b, int c){ 
+    
+    if(a > b && a > c){
+        int temp = a ;
+        a = b;
+        b = temp;
+        
+        return a,b;
+    } else if (b > c){
+        int temp = b ;
+        b = c;
+        c = temp;
+        
+        return b,c;
+    } else {
+        return a , b ,c;
+    }
+    
+}
+
+int main() {
+    
+    int x,y,z;
+    
+    cin >> x >> y >> z;
+    
+    cout <<Swap(x,y,z);
+}
