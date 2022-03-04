@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+  int i, j, m, n, mat[3][3], tran[3][3];
+  
+  cin >> m;
+  cin >> n;
+  
+  for (i = 0; i < m; i++){
+    for (j = 0; j < n; j++){
+      cin  >> mat[i][j];
+    }
+  }
+  for (i = 0; i < m; i++){
+    for (j = 0; j < n; j++){
+      tran[j][i] = mat[i][j];
+    }
+  }
+  for (i = 0; i < n; i++){
+    for (j = 0; j < m; j++){
+      cout << tran[i][j];
+    }
+    cout << endl;
+  }
+}
